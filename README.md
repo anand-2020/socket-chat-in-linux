@@ -2,8 +2,6 @@
 
 A basic chat application having client-server architecture, developed using multi-threaded socket programming.
 
-<br/>
-
 ### **Overview**
 
 - Single multi-threaded server to handle multiple clients.
@@ -11,13 +9,13 @@ A basic chat application having client-server architecture, developed using mult
 - All messages are sent through TCP socket.
 - One mutex mapped to each client to avoid race condition while connecting two clients.
 
-<br/>
 
 ### **Setup and use locally**
 
 1. Clone the repo and change directory
 
 ```
+git clone https://github.com/anand-2020/socket-chat-in-linux.git
 cd socket-chat-in-linux
 ```
 
@@ -60,7 +58,6 @@ g++ client.cpp -o client -lpthread
   <p>Hence, for each client, the chat message(both sent and recieved) are directed to show in another terminal.</p>
 
 </details>
-<br/>
 
 - Terminal 1
 
@@ -74,7 +71,6 @@ tty
 ./client <host_name> <port_no> > <output-of-tty-in-terminal-1>
 ```
 
-<br/>
 
 ### **Commands**
 
